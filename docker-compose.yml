@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  homework:
+    image: jboss/wildfly:latest
+    build: .
+    ports:
+      - "5000:8080"
+    volumes:
+      - ./target/deployment:/opt/jboss/wildfly/standalone/deployments

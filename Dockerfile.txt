@@ -1,0 +1,5 @@
+FROM java:8
+ADD ./FolderService.java .
+RUN javac FolderService.java
+CMD ["java", "FolderService"]
+EXPOSE 80
